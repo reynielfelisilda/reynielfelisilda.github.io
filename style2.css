@@ -1,0 +1,130 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #333;
+    background: url('assets/images/bg3.png') no-repeat center center fixed; /* Set your background image */
+    background-size: cover; /* Cover the entire background */
+  }
+  
+  /* Header/Navbar Styles */
+  .header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better text visibility */
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar {
+    border-bottom: 2px solid #ddd; /* Add a bottom border to the navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Adjust brand font size */
+    color: #333; /* Brand text color */
+    text-transform: uppercase; /* Uppercase brand text */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    color: #333; /* Nav link color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f39c12; /* Change color on hover */
+  }
+  
+  /* Home Section */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .home-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out; /* Animation */
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem; /* Smaller brand text on small screens */
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 0.9rem; /* Smaller font size for nav links */
+    }
+  
+    .home-content {
+      padding: 1rem; /* Reduce padding on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home {
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  
+  /* Additional Section Styling */
+  .about-content, .skills-content, .project-content, .contact-content {
+    background: rgba(255, 255, 255, 0.8); /* Light background for content sections */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Form Elements */
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contactForm input[type="submit"] {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm input[type="submit"]:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Carousel Styles */
+  .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Social Icons */
+  .social a {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social a:hover {
+    color: #f39c12;
+  }
+  
