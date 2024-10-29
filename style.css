@@ -1,0 +1,57 @@
+.bg-img {
+  background-image: url(img/nav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-image: url(img/body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.box-shadow {
+  box-shadow: 0 0 25px var(--bs-info);
+}
+
+.typing-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.text {
+  border-right: 2px solid;
+  padding-right: 5px;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.fade-section {
+  scroll-snap-align: start;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.fade-section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.fade-section:nth-child(3) {
+  animation-delay: 0.6s;
+}
