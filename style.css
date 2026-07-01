@@ -1,3 +1,14 @@
+:root {
+  --color-bg: #0f172a;
+  --color-surface: rgba(15, 23, 42, 0.78);
+  --color-text: #f8fafc;
+  --color-muted: #cbd5e1;
+  --color-accent: #3dd4c7;
+  --color-accent-strong: #1ea79a;
+  --color-accent-soft: rgba(61, 212, 199, 0.18);
+  --color-glow: rgba(61, 212, 199, 0.32);
+}
+
 .bg-img {
   background-image: url(img/nav.jpg);
   background-repeat: no-repeat;
@@ -5,6 +16,7 @@
 }
 
 body {
+  color: var(--color-text);
   background-image: url(img/body.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,13 +25,39 @@ body {
 }
 
 .box-shadow {
-  box-shadow: 0 0 25px var(--bs-info);
+  box-shadow: 0 0 20px var(--color-glow);
+}
+
+.text-accent,
+.text-info {
+  color: var(--color-accent);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.btn-accent,
+.btn-info {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #042f2e;
+  box-shadow: 0 0 20px var(--color-glow);
+}
+
+.btn-accent:hover,
+.btn-accent:focus,
+.btn-info:hover,
+.btn-info:focus {
+  background-color: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
+  color: #f8fafc;
 }
 
 .typing-container {
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text);
 }
 
 .text {
