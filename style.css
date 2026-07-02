@@ -1,3 +1,15 @@
+:root {
+  --color-bg: #07111f;
+  --color-surface: #101827;
+  --color-surface-strong: #172033;
+  --color-accent: #5eead4;
+  --color-accent-strong: #22d3ee;
+  --color-text: #f8fafc;
+  --color-muted: #cbd5e1;
+  --color-border: rgba(94, 234, 212, 0.28);
+  --color-shadow: rgba(34, 211, 238, 0.24);
+}
+
 .bg-img {
   background-image: url(img/nav.jpg);
   background-repeat: no-repeat;
@@ -5,27 +17,70 @@
 }
 
 body {
-  background-image: url(img/body.jpg);
+  background-image: url(img/citylights.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: var(--color-text);
 }
 
 .box-shadow {
-  box-shadow: 0 0 25px var(--bs-info);
+  box-shadow: 0 0 24px var(--color-shadow);
 }
 
 .typing-container {
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text);
 }
 
 .text {
   border-right: 2px solid;
   padding-right: 5px;
   animation: blink 0.5s step-end infinite;
+}
+
+.text-light,
+.text-light * {
+  color: var(--color-text) !important;
+}
+
+.text-info,
+.text-info * {
+  color: var(--color-accent) !important;
+}
+
+.btn-info {
+  background-color: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  color: var(--color-bg) !important;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+  background-color: var(--color-accent-strong) !important;
+  border-color: var(--color-accent-strong) !important;
+  color: var(--color-bg) !important;
+}
+
+.bg-info {
+  background-color: var(--color-accent) !important;
+  color: var(--color-bg) !important;
+}
+
+.border-info {
+  border-color: var(--color-border) !important;
+}
+
+.surface-card {
+  background-color: var(--color-surface-strong);
+  border: 1px solid var(--color-border);
+}
+
+.surface-panel {
+  background-color: rgba(16, 24, 39, 0.9);
+  border: 1px solid var(--color-border);
 }
 
 @keyframes blink {
