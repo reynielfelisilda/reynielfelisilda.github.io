@@ -29,6 +29,15 @@ body {
   box-shadow: 0 0 24px var(--color-shadow);
 }
 
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  margin-inline: auto;
+}
+
 .typing-container {
   font-size: 2rem;
   font-weight: bold;
